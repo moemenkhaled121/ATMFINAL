@@ -1,0 +1,2 @@
+2023-01-13 03:16:57.629448
+Previous balance: 0. Deposit amount is:3900.0. New balance:3900.0

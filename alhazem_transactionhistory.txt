@@ -1,0 +1,8 @@
+2023-01-13 03:41:14.556526
+Previous balance: 0. Deposit amount is:400000.0. New balance:400000.0
+2023-01-13 13:24:02.576923
+Previous balance: 400000.0. Deposit amount is:3000.0. New balance:403000.0
+2023-01-13 13:28:13.438836
+Previous balance: 403000.0. Withdrawn amount is:20.0. New balance:402980.0
+2023-01-13 13:38:59.783446
+Previous balance: 402980.0. Withdrawn amount is:200.0. New balance:402780.0
