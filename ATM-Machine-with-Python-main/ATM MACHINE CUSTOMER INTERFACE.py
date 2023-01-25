@@ -1,6 +1,34 @@
 import os
 import datetime
 
+class ATM (object):
+ def depositcash():
+    deposit_amount = float(input('Please enter amount to be deposited:'))
+    username = input('Please enter username:')
+    filename = username+'.txt'
+    transactionfilename = username+'_transactionhistory.txt'
+    transactionfile = open(transactionfilename,'a')
+    file = open(filename,'a')
+    balance = 0
+    new_balance = 0
+    
+def withdrawalcash():
+    withdrawn_amount = float(input('Please enter amount to be withdrawn:'))
+    username = input('Please enter username:')
+    filename = username+'.txt'
+    transactionfilename = username+'_transactionhistory.txt'
+    transactionfile = open(transactionfilename,'a')
+    file = open(filename,'a')
+    balance = 0
+    new_balance = 0
+    
+def balance():
+    username = input('Please enter username:')
+    filename = username+'.txt'
+    file = open(filename,'a')
+    
+    
+    ()
 def depositcash():
     deposit_amount = float(input('Please enter amount to be deposited:'))
     username = input('Please enter username:')
@@ -17,7 +45,8 @@ def depositcash():
         new_balance = balance + deposit_amount
         new_balance = str(new_balance)
         file2.write(new_balance)
-        print('Your new balance is:',new_balance)
+        print('Your new balance is:',new_balance) 
+        
     with open (transactionfilename,'a') as file3:
         balance = str(balance)
         deposit_amount = str(deposit_amount)
@@ -25,7 +54,7 @@ def depositcash():
         file3.write('\nPrevious balance: '+balance+'. Deposit amount is:'+deposit_amount+'. New balance:'+new_balance+'\n')
     
     file.close()
-
+    
 def withdrawalcash():
     withdrawn_amount = float(input('Please enter amount to be withdrawn:'))
     username = input('Please enter username:')
@@ -55,7 +84,6 @@ def withdrawalcash():
                 file3.write(str(datetime.datetime.now()))
                 file3.write('\nPrevious balance: '+balance+'. Withdrawn amount is:'+withdrawn_amount+'. New balance:'+new_balance+'\n')
     file.close()
-
 def balance():
     username = input('Please enter username:')
     filename = username+'.txt'
@@ -73,13 +101,13 @@ def balance():
     
 print('Hello ! Welcome to OUR bank !')
 print('Please login to proceed.')
-
-cust_profile = open('cust_profile.txt','r')
-data = cust_profile.read()
-username = input('Please enter your username:')
-password = input('Please enter your password:')
-if username in data and password in data:
-    print('Login Successful')
+class profile(object):
+    cust_profile = open('cust_profile.txt','r')
+    data = cust_profile.read()
+    username = input('Please enter your username:')
+    password = input('Please enter your password:')
+    if username in data and password in data:
+        print('Login Successful')
     opt = int(input('Do you want to continue? Enter 0 to continue, 1 to Terminate:'))
     while True:
         if (opt == 0):
@@ -116,5 +144,6 @@ if username in data and password in data:
         else:
             print('Wrong option')
             opt= int(input(' Select 0 to Continue, 1 to Terminate.'))
-else:
-    print('Incorrect Username or Password. Please try again ')
+    else:
+        print('Incorrect Username or Password. Please try again ')
+()

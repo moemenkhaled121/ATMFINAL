@@ -1,12 +1,12 @@
 import string
 import random
 
+
 cust_profile = open("cust_profile.txt","a+")
-
 cnt = 1
-temp =()
-address = ()
-
+class admin():
+  temp =()
+  address = ()
 def randompassword():
   chars = string.ascii_uppercase + string.ascii_lowercase + string.digits
   size = random.randint(8, 12)
@@ -77,4 +77,4 @@ while True:
 
 cust_profile.close()
 
-
+quit()
